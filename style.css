@@ -1,0 +1,113 @@
+/* ===== Full Screen Fitness Background ===== */
+body {
+    min-height: 100vh;
+    background: radial-gradient(circle at top, #1f2933, #0b0f14);
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ===== Main Fitness Card ===== */
+.container {
+    width: 370px;
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(14px);
+    padding: 26px;
+    border-radius: 20px;
+    box-shadow: 0 30px 60px rgba(0, 0, 0, 0.6);
+    color: #e5e7eb;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+/* ===== Heading ===== */
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #7CFF00; /* neon green */
+}
+
+/* ===== Labels ===== */
+label {
+    display: block;
+    margin-top: 14px;
+    font-size: 13px;
+    letter-spacing: 0.5px;
+    color: #9ca3af;
+}
+
+/* ===== Inputs ===== */
+input, select {
+    width: 100%;
+    padding: 11px;
+    margin-top: 6px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    font-size: 14px;
+    background: rgba(255, 255, 255, 0.12);
+    color: #ffffff;
+}
+
+input::placeholder {
+    color: #9ca3af;
+}
+
+select option {
+    color: #000;
+}
+
+/* ===== CTA Button ===== */
+button {
+    margin-top: 22px;
+    width: 100%;
+    padding: 14px;
+    border: none;
+    border-radius: 12px;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    cursor: pointer;
+    background: linear-gradient(135deg, #7CFF00, #2ECC71);
+    color: #0b0f14;
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 15px 30px rgba(124, 255, 0, 0.4);
+}
+
+/* ===== Result Box ===== */
+#result {
+    margin-top: 20px;
+    padding: 14px;
+    border-radius: 12px;
+    font-size: 14px;
+    line-height: 1.7;
+    font-weight: 500;
+}
+
+/* ===== Fitness Status Colors ===== */
+.green {
+    background: rgba(46, 204, 113, 0.18);
+    border-left: 5px solid #2ecc71;
+}
+
+.yellow {
+    background: rgba(241, 196, 15, 0.18);
+    border-left: 5px solid #f1c40f;
+}
+
+.orange {
+    background: rgba(230, 126, 34, 0.18);
+    border-left: 5px solid #e67e22;
+}
+
+.red {
+    background: rgba(231, 76, 60, 0.18);
+    border-left: 5px solid #e74c3c;
+}
